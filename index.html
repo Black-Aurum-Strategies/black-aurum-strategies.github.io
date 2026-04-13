@@ -3,187 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLACK AURUM STRATÉGIES | Expertise & Conseil</title>
+    <title>Black Aurum Stratégies</title>
     <style>
-        :root {
-            --gold: #D4AF37;
-            --dark: #0A0A0A;
-            --light-gold: #F1D592;
-        }
-
-        body {
-            background-color: var(--dark);
-            color: white;
-            font-family: 'Georgia', serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        header {
-            padding: 60px 20px;
-            border-bottom: 1px solid var(--gold);
-            width: 100%;
-        }
-
-        h1 {
-            color: var(--gold);
-            font-size: 2.5rem;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .slogan {
-            font-style: italic;
-            font-size: 1.1rem;
-            color: var(--light-gold);
-        }
-
-        /* Section des cours en temps réel */
-        .market-tickers {
-            width: 100%;
-            background: #111;
-            padding: 20px 0;
-            border-bottom: 1px solid #333;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .ticker-container {
-            width: 45%;
-            min-width: 300px;
-        }
-
-        section {
-            max-width: 900px;
-            padding: 50px 20px;
-        }
-
-        h2 {
-            color: var(--gold);
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--gold);
-            display: inline-block;
-            padding-bottom: 8px;
-            margin-bottom: 25px;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #333;
-            padding: 15px;
-            transition: 0.3s;
-        }
-
-        .card:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.05); }
-
-        .card h3 { color: var(--gold); font-size: 1rem; }
-
-        /* Mentions Légales */
-        .legal-section {
-            background: #000;
-            width: 100%;
-            padding: 40px 0;
-            font-size: 0.85rem;
-            color: #777;
-            border-top: 1px solid #222;
-        }
-
-        .legal-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-
-        footer {
-            padding: 30px;
-            background: #000;
-            width: 100%;
-        }
-
-        .hustle-quote { color: var(--gold); font-weight: bold; margin-bottom: 10px; }
+        body { background-color: #000; color: #D4AF37; font-family: 'Georgia', serif; text-align: center; margin: 0; padding: 20px; }
+        .logo { width: 150px; margin-top: 10px; }
+        h1 { color: #D4AF37; font-size: 2rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
+        .market-grid { display: flex; justify-content: center; gap: 20px; margin: 25px 0; flex-wrap: wrap; }
+        .price-box { border: 1px solid #D4AF37; padding: 15px; min-width: 160px; border-radius: 5px; background: #0a0a0a; }
+        .price-val { font-size: 1.4rem; font-weight: bold; color: #fff; display: block; margin-top: 5px; }
+        .contact-section { margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.9rem; }
+        a { color: #D4AF37; text-decoration: none; }
+        .btn { display: inline-block; border: 1px solid #D4AF37; padding: 10px 20px; margin-top: 15px; color: #000; background: #D4AF37; font-weight: bold; border-radius: 3px; }
     </style>
 </head>
 <body>
+    <img src="1000594061-removebg-preview.png" alt="Logo" class="logo">
+    <h1>Black Aurum Stratégies</h1>
+    <p style="color: #aaa; font-style: italic;">Apport de stratégies en métaux précieux & hydrocarbures</p>
 
-    <header>
-        <h1>BLACK AURUM STRATÉGIES</h1>
-        <p class="slogan">STAY HUMBLE.TRADE HARD.</p>
-    </header>
-
-    <div class="market-tickers">
-        <div class="ticker-container">
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                  "symbol": "TVC:GOLD",
-                  "colorTheme": "dark",
-                  "isTransparent": true,
-                  "locale": "fr",
-                  "width": "100%"
-                }
-                </script>
+    <div class="market-grid">
+        <div class="price-box">
+            <span>OR (OZ/USD)</span>
+            <div style="height:25px;">
+                <iframe src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" width="120" height="25" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
-        <div class="ticker-container">
-            <div class="tradingview-widget-container">
-                <div class="tradingview-widget-container__widget"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                  "symbol": "TVC:UKOIL",
-                  "colorTheme": "dark",
-                  "isTransparent": true,
-                  "locale": "fr",
-                  "width": "100%"
-                }
-                </script>
+        <div class="price-box">
+            <span>PÉTROLE (WTI)</span>
+            <div style="height:25px;">
+                <iframe src="https://www.goldbroker.com/widget/live-price/WTI?currency=USD" width="120" height="25" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </div>
 
-    <section id="about">
-        <h2>Expertise & Stratégie</h2>
-        <p><strong>Black Aurum Stratégies</strong> est le partenaire des entrepreneurs qui avancent en silence mais frappent avec précision. Nous transformons les opportunités en réalités concrètes sur les marchés mondiaux.</p>
-    </section>
-
-    <section id="expertise">
-        <div class="expertise-grid">
-            <div class="card"><h3>Intermédiation</h3><p>Facilitation de transactions stratégiques (Or & Hydrocarbures).</p></div>
-            <div class="card"><h3>Mise en Relation</h3><p>Connexion directe avec les fournisseurs d'Afrique et acheteurs mondiaux.</p></div>
-            <div class="card"><h3>Conseil & Appui</h3><p>Accompagnement administratif et conseil de gestion sécurisé.</p></div>
-            <div class="card"><h3>Ingénierie</h3><p>Relations institutions financières (Code APE 7022Z).</p></div>
-        </div>
-    </section>
-
-    <div class="legal-section">
-        <div class="legal-content">
-            <h4 style="color: #999;">MENTIONS LÉGALES</h4>
-            <p><strong>Éditeur :</strong> Monsieur Jean-François Xavier ROUVEL, opérant sous le nom commercial <strong>Black Aurum Stratégies</strong>.</p>
-            <p><strong>Siège social :</strong> 4 QUAI DE LA REVOLUTION, APPT B319, 94140 ALFORTVILLE, FRANCE.</p>
-            <p><strong>Immatriculation :</strong> SIREN 851 907 857 - Code APE 7022Z (Conseil pour les affaires et conseil de gestion).</p>
-            <p><strong>Hébergement :</strong> GitHub Pages / GitHub Inc., 88 Colin P. Kelly Jr St, San Francisco, CA 94107, USA.</p>
-            <p><strong>Contact :</strong> Pour toute demande relative aux activités de Black Aurum Stratégies, merci de vous référer aux coordonnées officielles enregistrées.</p>
-        </div>
+    <div class="contact-section">
+        <p><strong>Jean-François Xavier ROUVEL</strong></p>
+        <p>SIREN : 851 907 857 | Alfortville, France</p>
+        <p>Contact : <a href="mailto:blackaurumstrategies@gmail.com">blackaurumstrategies@gmail.com</a></p>
+        <a href="mailto:blackaurumstrategies@gmail.com" class="btn">DEMANDER UNE ANALYSE</a>
     </div>
-
-    <footer>
-        <p class="hustle-quote">WORK HARD IN SILENCE. LET SUCCESS BE YOUR NOISE.</p>
-    </footer>
-
 </body>
 </html>
-
-
