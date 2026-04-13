@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Aurum Stratégies</title>
+    <title>BLACK AURUM STRATÉGIES | Expertise</title>
     <style>
-        body { background-color: #000; color: #D4AF37; font-family: 'Georgia', serif; text-align: center; margin: 0; padding: 20px; }
-        .logo { width: 150px; margin-top: 10px; }
-        h1 { color: #D4AF37; font-size: 2rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 5px; }
-        .market-grid { display: flex; justify-content: center; gap: 20px; margin: 25px 0; flex-wrap: wrap; }
-        .price-box { border: 1px solid #D4AF37; padding: 15px; min-width: 160px; border-radius: 5px; background: #0a0a0a; }
-        .price-val { font-size: 1.4rem; font-weight: bold; color: #fff; display: block; margin-top: 5px; }
-        .contact-section { margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.9rem; }
-        a { color: #D4AF37; text-decoration: none; }
-        .btn { display: inline-block; border: 1px solid #D4AF37; padding: 10px 20px; margin-top: 15px; color: #000; background: #D4AF37; font-weight: bold; border-radius: 3px; }
+        :root { --gold: #D4AF37; --dark: #0A0A0A; }
+        body { background-color: var(--dark); color: white; font-family: 'Georgia', serif; margin: 0; padding: 0; text-align: center; line-height: 1.6; }
+        header { padding: 50px 20px; border-bottom: 1px solid var(--gold); background: linear-gradient(to bottom, #1a1a1a, #0a0a0a); }
+        .logo { width: 180px; margin-bottom: 20px; }
+        h1 { color: var(--gold); font-size: 2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0; }
+        .subtitle { font-style: italic; color: #ccc; margin-top: 10px; font-size: 1.1rem; }
+        
+        .market-section { padding: 30px 10px; background: #111; border-bottom: 1px solid #222; }
+        .market-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .price-card { border: 1px solid var(--gold); padding: 20px; min-width: 220px; border-radius: 4px; background: #050505; }
+        .price-card h3 { color: var(--gold); margin: 0 0 15px 0; font-size: 1rem; border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+        .services { padding: 50px 20px; max-width: 800px; margin: auto; text-align: left; }
+        .services h2 { color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        .service-item { margin-bottom: 30px; padding-left: 15px; border-left: 2px solid var(--gold); }
+        .service-item strong { color: var(--gold); display: block; margin-bottom: 8px; font-size: 1.2rem; }
+        .service-item p { margin: 0; color: #ddd; }
+
+        footer { padding: 50px 20px; border-top: 1px solid #333; background: #050505; font-size: 0.95rem; }
+        .contact-link { color: var(--gold); text-decoration: none; font-weight: bold; }
+        .cta-button { display: inline-block; background: var(--gold); color: black; padding: 18px 35px; 
+                      text-decoration: none; font-weight: bold; border-radius: 2px; margin-top: 25px; text-transform: uppercase; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-    <img src="1000594061-removebg-preview.png" alt="Logo" class="logo">
-    <h1>Black Aurum Stratégies</h1>
-    <p style="color: #aaa; font-style: italic;">Apport de stratégies en métaux précieux & hydrocarbures</p>
 
+<header>
+    <img src="1000594061-removebg-preview.png" alt="Black Aurum Stratégies" class="logo">
+    <h1>BLACK AURUM STRATÉGIES</h1>
+    <p class="subtitle">Apport de stratégies en métaux précieux & hydrocarbures</p>
+</header>
+
+<section class="market-section">
     <div class="market-grid">
-        <div class="price-box">
-            <span>OR (OZ/USD)</span>
-            <div style="height:25px;">
-                <iframe src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" width="120" height="25" frameborder="0" scrolling="no"></iframe>
-            </div>
+        <div class="price-card">
+            <h3>OR (XAU/USD)</h3>
+            <iframe src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" width="180" height="35" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div class="price-box">
-            <span>PÉTROLE (WTI)</span>
-            <div style="height:25px;">
-                <iframe src="https://www.goldbroker.com/widget/live-price/WTI?currency=USD" width="120" height="25" frameborder="0" scrolling="no"></iframe>
-            </div>
+        <div class="price-card">
+            <h3>PÉTROLE (WTI)</h3>
+            <iframe src="https://www.goldbroker.com/widget/live-price/WTI?currency=USD" width="180" height="35" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
+</section>
 
-    <div class="contact-section">
-        <p><strong>Jean-François Xavier ROUVEL</strong></p>
-        <p>SIREN : 851 907 857 | Alfortville, France</p>
-        <p>Contact : <a href="mailto:blackaurumstrategies@gmail.com">blackaurumstrategies@gmail.com</a></p>
-        <a href="mailto:blackaurumstrategies@gmail.com" class="btn">DEMANDER UNE ANALYSE</a>
+<section class="services">
+    <h2>Nos Pôles d'Expertise</h2>
+    <div class="service-item">
+        <strong>Analyse Stratégique</strong>
+        <p>Suivi algorithmique et fondamental des cours mondiaux. Nous transformons la donnée brute en opportunités concrètes sur l'or et le pétrole.</p>
     </div>
+    <div class="service-item">
+        <strong>Gestion des Risques</strong>
+        <p>Conseils personnalisés pour la sécurisation de vos actifs face à la volatilité des marchés des matières premières.</p>
+    </div>
+    <div class="service-item">
+        <strong>Intelligence Économique</strong>
+        <p>Veille constante sur les politiques de l'OPEP+ et les rapports de la Fed pour anticiper les mouvements de marché.</p>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Jean-François Xavier ROUVEL</strong></p>
+    <p>SIREN : 851 907 857 | Alfortville, France</p>
+    <p>Email direct : <a href="mailto:blackaurumstrategies@gmail.com" class="contact-link">blackaurumstrategies@gmail.com</a></p>
+    <a href="mailto:blackaurumstrategies@gmail.com" class="cta-button">Engager la Discussion</a>
+</footer>
+
 </body>
 </html>
